@@ -1,0 +1,7 @@
+{
+  "name": "nutrition-facts-app",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": ".\\nwjs_bin\\nw.exe src"
+  }
+}

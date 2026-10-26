@@ -1,0 +1,10 @@
+﻿{
+  "name": "nutrition-facts-app-core",
+  "main": "index.html",
+  "window": {
+    "title": "Nutrition Facts App",
+    "width": 1000,
+    "height": 700,
+    "toolbar": true
+  }
+}

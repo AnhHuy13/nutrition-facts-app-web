@@ -1,0 +1,99 @@
+.vertical-panel {
+  position: fixed;
+  inset: 0 auto 0 0;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  width: 260px;
+  min-height: 100vh;
+  overflow-y: auto;
+  background: #222431;
+  color: #fff;
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 72px;
+  border-bottom: 1px solid #383a47;
+}
+
+.panel-logo {
+  padding: 23px 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.panel-logo img {
+  width: 20%;
+}
+
+.panel-logo h2 {
+  font-size: 1.35rem;
+  font-weight: 600;
+}
+
+.panel-menu {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 3px;
+  padding: 18px 12px;
+}
+
+.panel-menu a,
+.panel-footer a {
+  display: flex;
+  align-items: center;
+  min-height: 42px;
+  padding: 10px 13px;
+  border-radius: 8px;
+  color: #c0c2cc;
+  font-size: 0.95rem;
+  font-weight: 400;
+  text-decoration: none;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.panel-menu a:hover,
+.panel-footer a:hover {
+  background: #303240;
+  color: #fff;
+}
+
+.panel-menu a.active {
+  background: #343746;
+  color: #fff;
+  font-weight: 600;
+}
+
+.panel-menu a:focus-visible,
+.panel-footer a:focus-visible {
+  outline: 2px solid #7c83a0;
+  outline-offset: 2px;
+}
+
+.panel-footer {
+  padding: 12px;
+  border-top: 1px solid #383a47;
+}
+
+@media screen and (max-width: 768px) {
+  .vertical-panel {
+    width: min(280px, 85vw);
+  }
+
+  .sidebar-header {
+    min-height: 72px;
+  }
+
+  .panel-logo {
+    padding: 20px 18px;
+  }
+}
