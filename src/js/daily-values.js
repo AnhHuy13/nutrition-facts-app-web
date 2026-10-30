@@ -24,7 +24,8 @@ export function syncDailyValuePercent(nutrient) {
   const dailyValue = DAILY_VALUES.get(key);
   const amount = nutrient.value === "" ? NaN : Number(nutrient.value);
 
-  nutrient.daily_value_percent = dailyValue && Number.isFinite(amount) && amount >= 0
-    ? Math.round((amount / dailyValue) * 100)
-    : null;
+  nutrient.daily_value_percent =
+    dailyValue && Number.isFinite(amount) && amount >= 0
+      ? Math.round((amount / dailyValue) * 100)
+      : null;
 }

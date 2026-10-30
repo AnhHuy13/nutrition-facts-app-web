@@ -23,7 +23,12 @@ const nutrientTemplate = [
 export function createEmptyProductData() {
   return {
     product_name: "",
-    serving_info: { serving_size: "", serving_unit: "", servings_per_container: "" },
+    serving_info: {
+      serving_size: "",
+      serving_weight: "",
+      serving_unit: "",
+      servings_per_container: "",
+    },
     calories: "",
     nutrients: nutrientTemplate.map((nutrient) => ({
       ...nutrient,

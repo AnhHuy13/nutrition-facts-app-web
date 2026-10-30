@@ -1,7 +1,18 @@
 {
   "name": "nutrition-facts-app",
   "version": "1.0.0",
+  "type": "module",
   "scripts": {
-    "dev": ".\\nwjs_bin\\nw.exe src"
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1"
+  },
+  "dependencies": {
+    "copy-image-clipboard": "^2.1.2",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "vite": "^8.3.5"
   }
 }
