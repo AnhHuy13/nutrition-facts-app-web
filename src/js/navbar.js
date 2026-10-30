@@ -24,10 +24,10 @@ document.addEventListener("keydown", (event) => {
 });
 
 window.addEventListener("resize", () => {
-  if (window.innerWidth > 768) setMenuOpen(false);
+  if (window.innerWidth > 760) setMenuOpen(false);
 });
 
-document.getElementById("closeSidebar").addEventListener("click", () => {
+document.querySelector("#closeSidebar").addEventListener("click", () => {
   setMenuOpen(false);
-  document.getElementById("menuToggle").focus();
+  menuToggle.focus();
 });
