@@ -1,3 +1,58 @@
-node_modules/
+# gitignore template for NW.js projects
+# website: https://nwjs.io/
+
+# Seen in standard and sdk versions
+credits.html
+locales/
+libEGL.dll
+libGLEv2.dll
+node.dll
+nw.dll
+nw.exe
+natives_blob.bin
+nw_100_percent.pak
+nw_200_percent.pak
+nw_elf.dll
+snapshot_blob.bin
+resources.pak
+
+# Seen only in standard
+d3dcompiler_47.dll
+ffmpeg.dll
+icudtl.dat
+
+# Seen only in sdk
+pnacl/
+chromedriver.exe
+nacl_irt_x86_64.nexe
+nwjc.exe
+payload.exe
+
 .npm-cache/
-dist/
+
+.DS_Store
+.idea
+.pnpm-store
+*.cpuprofile
+*.local
+*.log
+/.vscode/
+/docs/.vitepress/cache
+/docs/.vitepress/.temp
+/packages/vite/LICENSE
+dist
+dist-ssr
+explorations
+node_modules
+!**/glob-import/root/dir/node_modules
+!**/fixtures/glob-exports/node_modules
+!**/fixtures/glob-exports/node_modules/my-pkg/dist
+!**/fixtures/config/native-compat/json-named-import-bare/node_modules
+!**/fixtures/config/native-compat/json-named-import-ok/node_modules
+playground-temp
+temp
+TODOs.md
+.eslintcache
+
+# runtime-created symlink for glob-import playground tests
+playground/glob-import/root/follow-symlinks/linked/my-lib
