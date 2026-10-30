@@ -4,6 +4,7 @@
 # Seen in standard and sdk versions
 credits.html
 locales/
+nwjs_bin/
 libEGL.dll
 libGLEv2.dll
 node.dll
